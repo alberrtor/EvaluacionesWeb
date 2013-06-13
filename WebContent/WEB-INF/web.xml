@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Autor: Alberto Romero Rubí
+-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <context-param>
+    <param-name>preparatoria</param-name>
+    <param-value>Josefa Ortiz de Domínguez (Cuajimalpa)</param-value>
+  </context-param>
+  <context-param>
+    <param-name>database</param-name>
+    <param-value>iemsdf_db</param-value>
+  </context-param>
+  <context-param>
+    <param-name>database_host</param-name>
+    <param-value>10.4.7.1</param-value>
+  </context-param>
+  <context-param>
+    <param-name>database_user</param-name>
+    <param-value>kylix</param-value>
+  </context-param>
+  <context-param>
+    <param-name>database_password</param-name>
+    <param-value>kylix</param-value>
+  </context-param>
+  <context-param>
+    <param-name>semestre</param-name>
+    <param-value>2012-2013 A</param-value>
+  </context-param>
+  <context-param>
+    <param-name>ruta_absoluta_reportes</param-name>
+    <param-value>/home/aromero/development/eclipse/workspace/EvaluacionesWeb/WebContent/WEB-INF/reportes/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>corte</param-name>
+    <param-value>Segundo Corte</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>AutentificaUsuario</servlet-name>
+    <servlet-class>myservlets.AutentificaUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AutentificaUsuario</servlet-name>
+    <url-pattern>/Autentifica.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReporteCompendiada</servlet-name>
+    <servlet-class>myservlets.ReporteCompendiada</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReporteCompendiada</servlet-name>
+    <url-pattern>/ReporteCompendiada.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReporteFormativa</servlet-name>
+    <servlet-class>myservlets.ReporteFormativa</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReporteFormativa</servlet-name>
+    <url-pattern>/ReporteFormativa.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReporteListaTutorados</servlet-name>
+    <servlet-class>myservlets.ReporteListaTutorados</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReporteListaTutorados</servlet-name>
+    <url-pattern>/ReporteListaTutorados.do</url-pattern>
+  </servlet-mapping>
+
+</web-app>

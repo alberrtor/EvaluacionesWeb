@@ -1,0 +1,97 @@
+body {/* body */
+background-color: #ffffff;
+margin:0px;
+padding:0px;
+font: 10px  verdana, arial, helvetica;
+color: #green;
+
+}
+h1{ /* title "Noticias" */
+padding:5px 0 5px 0;
+margin:0px;
+font-size:18px;
+color:#000000;
+text-align:center;
+}
+h2{ /* title "publicaciones" */
+padding:5px 0 5px 0;
+margin:0px;
+font-size:12px;
+color:#000000;
+text-align:center;
+}
+h3{ /* title "Calendario escolar ciclo 2010-2011 A" */
+padding:0 0 5px 0;
+margin:0px;
+font-size:12px;
+color:#59cef9;
+text-align:center;
+}
+h4{ /* title la "Ciencia para todos" */
+padding:0 0 10px 0;
+margin:0px;
+font-size:14px;
+color:#7ea743;
+}
+p{
+text-align:justify;
+padding:2px 0 2px 0;
+margin:0px;
+line-height:15px;
+}
+p.white{
+color:#FFFFFF;
+}
+p.green{
+color:#d4f0ba;
+font-size:14px;
+}
+p.white_14{
+color:#ffffff;
+font-size:14px;
+font-weight:bold;
+}
+p.school_name{ /* title "Gral. Lázaro Cárdenas del Río" */
+text-decoration:none;
+color:  #416271;
+font-size:18px;
+font-weight:bold;
+}
+
+
+.boton {
+width:auto;
+height:22px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #FFFFFF;
+background-color:#416271;
+border: 1px solid white;
+text-align:center;
+}
+
+/*----------- empieza Contenedores divs ----------------*/
+
+#main_container{ /* contenedor principal */
+width:900px;
+height:auto;
+margin:auto;
+background-color:#ffffff;
+padding-top:50px;
+}
+
+/*-----------------------------footer------------------*/
+#footer{
+clear:both;
+width: auto;
+height:37px;
+color: #fff;
+background-color:#416271;
+}
+/*---------termina Contenedores divs----------------------*/
+
+
+
+
+
